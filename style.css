@@ -1,0 +1,346 @@
+html{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease;
+    overflow: hidden;
+    
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Ostrich;
+    src: url(ostrich-regular.ttf);
+}
+@font-face {
+    font-family: Ostrich-Black;
+    src: url(ostrich-black.ttf);
+}
+
+header{
+    position: fixed;
+    right: -40px;
+    top: 5px;
+    padding-top: 38px;
+    padding-bottom: 15px;
+    width: 50px;
+    height: 260px;
+    background-color: white;
+    text-align: center;
+    transition: all 500ms ease;
+}
+header:hover{
+    right: -1px;
+    transition: all 500ms ease;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+}
+header div{
+    width: 100%;
+    height: 18%;
+    align-self: center;
+    cursor: pointer;
+    transition:  all 300ms ease;
+}
+header div:hover{
+    background-color: grey;
+    transition: all 300ms ease;
+}
+
+
+
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: transparent;
+    align-content: flex-start;
+    flex-direction:column; 
+    position: relative;
+}
+.beranda{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(69,194,78,1);
+    left:0px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#reg{
+    width: 120px;
+    height: 20px;
+    padding: 10px;
+    font-family: Ostrich;
+    font-size:14pt;
+    color: white;
+    letter-spacing: 1pt;
+    background-color: green;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    cursor: pointer;
+    transition:  all 300ms ease;
+    
+}
+#reg:hover{
+    background-color: rgba(0,0,0,0.1);
+    transition:  all 300ms ease;
+}
+.pembuka{
+    margin: auto;
+}
+#welcome{
+    width: 100%;
+    font-family: Ostrich;
+    font-size: 40pt;
+    text-align: center;
+    
+    
+}
+#acfc{
+    font-family: Ostrich-Black;
+    font-size: 45pt;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+    
+}
+.tentang{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(178,177,110,1);
+    left:0px;
+    align-items: center;
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-left: 80px;
+    border-radius: 150px;
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+}
+#logoacfc{
+    width: 220px;
+    height: 220px;
+    margin:auto;
+}
+    
+.daftar{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(25,109,195,1);
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+}
+.daftar div{
+    font-family: Ostrich;
+    font-size: 25pt;
+    background-color: transparent;
+    margin: auto;
+    object-position: right; 
+}
+#sub{
+    font-family: Ostrich-Black;
+    color: rgba(203,195,195,1);
+}
+.daftar div div{
+    display: inline-block;
+    width: 200px;
+    height: 25pt;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    vertical-align: middle;
+    color: white;
+    
+}
+.inputan{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 25pt;
+    width: 600px;
+    font-family: Ubuntu;
+    letter-spacing: 0pt;
+    font-size: 18pt;
+    vertical-align: middle;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#submit{
+    height: 50px;
+    width: 50px;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+#submitting{
+    background-color:transparent;
+    color:transparent;
+    width:50px;
+    height:50px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: ease 300ms;
+}
+#submitting:hover{
+    height: 57px;
+    width: 57px;
+    transition: ease 300ms;
+}
+
+#submitted{
+    display:flex;
+    flex-direction: column;
+    font-size:12pt;
+    margin: auto;
+    margin-left: 4px;
+    letter-spacing: 1.5pt;
+    align-self: center;
+}
+.artikel{
+    width: 750px;
+    height: 500px;
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 227px;
+    
+    color: white;
+}
+.artikel a{
+    text-align: left;
+    font-family: Ostrich;
+    font-size:33pt;
+    letter-spacing: 1pt;
+    
+}
+h1,h2,h3,h4,h5{
+    margin: 0px;;
+}
+#htentang{
+    letter-spacing: 0pt;
+    font-family: Ostrich-Black;
+    font-size: 45pt;
+    
+}
+.artikel p{
+    font-family: Ubuntu;
+    font-size: 17pt;
+    text-align:justify;
+}
+    
+    
+.foto{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    background-color: rgba(69,1,78,1);
+    
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.slide{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0px;
+    transition: ease 6s;
+}
+#gambar1 img, #gambar2 img{
+    width: 100%;
+}
+.navi{
+    padding: 0px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    
+}
+
+.klik2:hover{
+    background-color: gray;
+}
+.klik{
+    background-color: white;
+    
+}
+.klik2{
+    background-color: black;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    
+
+}
+.klik2:focus{
+    background-color: white;
+    transition: all ease 20ms;
+}
+
+
+
+.panitia{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(44,100,78,1);
+    left:0px;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    right: 5px;
+    bottom: 0px;
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    background-color: transparent;
+}
+#twitter,#fb{
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    transition: ease 300ms;
+    cursor: pointer;
+}
+#twitter2{
+    margin: auto;
+    height: 15px;
+       
+}
+#fb2{
+    margin: auto;
+    height: 20px;
+}
+#twitter:hover{
+    background-color: transparent;
+    transition: ease 300ms;
+}
+#fb:hover{
+    background-color: transparent;
+    transition: ease 300ms;
+}

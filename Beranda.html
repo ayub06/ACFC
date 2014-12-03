@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  type="text/css" href="style.css" media="all"></link>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+            
+            $("#gambar2").hide();
+            $("#gambar3").hide();
+            $("#gambar4").hide();
+            $("#satu").click(function(){
+                $("#gambar1").fadeIn();
+                $("#gambar2").hide();
+                $("#gambar3").hide();
+                $("#gambar4").hide();
+                               
+            });
+            $("#dua").click(function(){
+                $("#gambar2").fadeIn();
+                $("#gambar1").hide();
+                $("#gambar3").hide();
+                $("#gambar4").hide();
+                
+            });
+             $("#tiga").click(function(){
+                $("#gambar3").fadeIn();
+                $("#gambar2").hide();
+                $("#gambar1").hide();
+                $("#gambar4").hide();
+               
+            });
+            $("#empat").click(function(){
+                $("#gambar4").fadeIn();
+                $("#gambar1").hide();
+                $("#gambar3").hide();
+                $("#gambar2").hide();
+                
+            }); 
+            $(".home").click(function(){
+               $("body").animate({top:'0px'},1000,"swing");
+            });
+            $(".about").click(function(){
+               $("body").animate({top:'-700px'},1000,"swing");
+            });
+            $(".reg").click(function(){
+               $("body").animate({top:'-1400px'},1000,"swing");
+            });
+            $(".album").click(function(){
+               $("body").animate({top:'-2100px'},1000,"swing");
+            });
+            $(".crew").click(function(){
+               $("body").animate({top:'-2800px'},1000,"swing");
+            });
+           
+           
+            $("#reg").click(function(){
+               $("body").animate({top:'-1400px'},1000,"swing");
+            });
+           $("#submitted").hide();
+           $("#submit").click(function(){
+                $("#submitted").fadeIn(400);
+            });
+                      
+       });
+            
+    </script>
+</head>
+
+<header>
+    <div class="home"><img id="icon" src="real4.png"> </div>
+    <div class="about"><img id="icon" src="logo_nav_09.png"></div>
+    <div class="reg"><img id="icon" src="longtermm.png"> </div>
+    <div class="album"><img id="icon" src="photo134.png"> </div>
+    <div class="crew"><img id="icon" src="male18.png"> </div>
+</header>
+
+<body>
+    <div class="beranda">
+        <nav id="reg">registration</nav>
+        <div class="pembuka">
+            <div id="welcome">WELCOME TO OFFICIAL WEBSITE OF</div>
+            <div id="acfc">AL FIRDAUS CUP FUTSAL COMPETITION</div>
+        </div>
+    </div>
+    <div class="tentang">
+        <div class="circle">
+            <img id="logoacfc" src="logoacfc.png">   
+        </div>
+        <article class="artikel">
+            <a>
+                <h1 id="htentang">AL FIRDAUS CUP</h1>
+                <h5>FUTSAL COMPETITION</h5>
+            </a>
+            <p>is a futsal competition event inter-school in Surakarta. 
+In every year, ACFC is held at December in two places.
+The first place is to qualification period in Solo Sehat, 
+Solo Baru. The second place is to knouckout period in 
+Sritex Arena. In the first event, 2010, 20 team join in this 
+competition. And the second event, quota of team is 
+fullfilled, 32 team. 
+            </p>
+        </article>
+    </div>
+    <div class="daftar">
+        
+        <div><form action="pendaftaran.php" method="POST">
+            <a id="sub" style="font-size:35pt;color:white">REGISTRATION TEAM</a><br><br><br>
+            <a id="sub">SCHOOL<br></a>
+                <div><a>SCHOOL NAME</a></div>
+                    <input id="schoolname" name="nama_sekolah" type="text" class="inputan"></input><br>
+                <div><a>SCHOOL ADDRESS</a></div>
+                    <input id="schooladdress" name="alamat_sekolah" type="text" class="inputan"></input><br>
+                <div><a>PHONE</a></div>
+                    <input id="phone" name="telepon_sekolah" type="text" class="inputan"></input><br><br>
+            <a id="sub">OFFICIAL TEAM<br></a>
+                <div><a>NAME</a></div>
+                    <input id="officialname" name="nama_official" type="text" class="inputan"></input><br>
+                <div><a>PHONE</a></div>
+                    <input id="teamphone" name="hp_official" type="text" class="inputan"></input><br><br>
+            <div style="text-align:center;width:100%;vertical-align:middle">
+                <button type="submit" name="kirim" id="submitting">
+                <img src="approve9.png" id="submit"><a id="submitted">SUBMITTED</a></button>
+            </div></form>
+        </div>
+        
+    </div>
+    <div class="foto">
+        <div class="slide">
+        <a id="gambar1"> <img src="gambar1.jpg"></img></a>
+        <a id="gambar2"> <img src="gambar2.jpg"></img></a>
+        <a id="gambar3"> <img src="gambar3.jpg"></img></a>
+        <a id="gambar4"> <img src="gambar4.jpg"></img></a>
+        </div>
+
+        <div class="navi" style="text-align:center">
+        <button class="klik2" id="satu"></button>
+        <button class="klik2" id="dua"></button>
+        <button class="klik2" id="tiga"></button>
+        <button class="klik2" id="empat"></button>
+        </div>
+    </div>
+    
+    <div class="panitia"></div>    
+</body>
+
+<footer>
+    <div id="fb"><img id="fb2" src="facebook12.png"></div>
+    <div id="twitter"><img id="twitter2" src="tweet.png"></div>
+</footer>
+
+</html>
